@@ -1,27 +1,41 @@
-<!--PHP Compound Interest Calculator-->
 <html lang="en">
+	<head>
+		.center {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
+	</head>
 	<body>
-		<?php
-			abstract class InterestType {
-				const ANNUALL = 1;
-				const SEMI_ANNUAL = 2;
-				const QUARTERLY = 4;
-				const MONTHLY = 12;
-				const DAILY = 365;
-			}
-
-			function getCompoundInterest($principle, $rate, $cycles, $type) {
-				for ($i = 0; $i < $cycles; $i++) {
-					$principle += $principle * $rate * (1/$type);
-				}
-				return $principle;
-			}
-			echo "$" . round(getCompoundInterest(
-				2000,
-				0.08,
-				12,
-				InterestType::MONTHLY
-			), 2);
-		?>
+		<div class="center">
+			<h2>Compound Interest Calculator</h2>
+			<p>
+				<?php
+					abstract class InterestType {
+						const ANNUALL = 1;
+						const SEMI_ANNUAL = 2;
+						const QUARTERLY = 4;
+						const MONTHLY = 12;
+						const DAILY = 365;
+					}
+		
+					function getCompoundInterest($principle, $rate, $cycles, $type) {
+						for ($i = 0; $i < $cycles; $i++) {
+							$principle += $principle * $rate * (1/$type);
+						}
+						return $principle;
+					}
+					echo "$" . round(getCompoundInterest(
+						2000,
+						0.08,
+						12,
+						InterestType::MONTHLY
+					), 2);
+				?>
+			</p>
+		</div>
 	</body>
 </html>
