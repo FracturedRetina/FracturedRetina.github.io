@@ -1,4 +1,4 @@
-abstract class InterestType {
+InterestType = {
 	const ANNUAL : 1,
 	const SEMI_ANNUAL : 2,
 	const QUARTERLY : 4,
