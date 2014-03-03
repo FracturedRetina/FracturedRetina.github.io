@@ -12,6 +12,7 @@
 				height: 350;
 			}
 		</style>
+		<script type="text/javascript" src="calculate.js"></script>
 	</head>
 	<body>
 		<div class="center">
@@ -21,7 +22,7 @@
 				Priciple: <input type="text" name="principle"><br>
 				Rate(%): <input type="text" name="rate"><br>
 				Terms: <input type="" name="time"><br>
-				<input type="submit">
+				<input type="submit" onclick="calcFromForm">
 			</form>
 			Interest Type: <select form="calcForm">
 				<option value="ANNUAL">Annually</option>
@@ -30,8 +31,6 @@
 				<option value="MONTHLY">Monthly</option>
 				<option value="DAILY">Daily</option>
 			</select><br>
-			
-			<script type="text/javascript" src="calculate.js"></script>
 		</div>
 	</body>
 </html>
