@@ -18,11 +18,11 @@
 		<div class="center">
 			<h2>Compound Interest Calculator</h2>
 			
-			<form name="calcForm" id="calcForm" action="calculate.php" method="post">
+			<form name="calcForm" id="calcForm" onsumbmit="calcFromForm()">
 				Priciple: <input type="text" name="principle"><br>
 				Rate(%): <input type="text" name="rate"><br>
 				Terms: <input type="" name="time"><br>
-				<input type="submit" onclick="calcFromForm">
+				<input type="submit">
 			</form>
 			Interest Type: <select form="calcForm">
 				<option value="ANNUAL">Annually</option>
