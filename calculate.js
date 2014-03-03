@@ -25,11 +25,11 @@ function getCompoundInterest(principle, rate, cycles, type) {
 }
 
 
-document.forms["calcForm"]["fname"].value;
-
-document.write("$" + round(getCompoundInterest(
-	document.forms["calcForm"]["principle"],
-	document.forms["calcForm"]["rate"] / 100,
-	document.forms["calcForm"]["time"],
-	InterestType.MONTHLY
-)).toFixed(2));
+function calcFromForm() {
+	document.write("$" + round(getCompoundInterest(
+		document.forms["calcForm"]["principle"],
+		document.forms["calcForm"]["rate"] / 100,
+		document.forms["calcForm"]["time"],
+		InterestType.MONTHLY
+	)).toFixed(2));
+}
