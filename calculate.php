@@ -23,9 +23,9 @@ function getCompoundInterest($principle, $rate, $cycles, $type) {
 	}
 	return $principle;
 }
-print "$" . round(getCompoundInterest(
-	floatval($_POST["principle"]),
-	floatval($_POST["rate"] / 100),
-	floatval($_POST["time"]),
-	InterestType::MONTHLY
-), 2);
+//print "$" . round(getCompoundInterest(
+//	floatval($_POST["principle"]),
+//	floatval($_POST["rate"] / 100),
+//	floatval($_POST["time"]),
+//	InterestType::MONTHLY
+//), 2);
