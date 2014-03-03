@@ -23,7 +23,7 @@ function getCompoundInterest($principle, $rate, $cycles, $type) {
 	}
 	return $principle;
 }
-echo "$" . round(getCompoundInterest(
+print "$" . round(getCompoundInterest(
 	floatval($_POST["principle"]),
 	floatval($_POST["rate"] / 100),
 	floatval($_POST["time"]),
