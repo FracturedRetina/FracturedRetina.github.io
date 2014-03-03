@@ -26,7 +26,7 @@ function getCompoundInterest(principle, rate, cycles, type) {
 
 
 function calcFromForm() {
-	document.write("$" + round(getCompoundInterest(
+	alert("$" + round(getCompoundInterest(
 		document.forms["calcForm"]["principle"],
 		document.forms["calcForm"]["rate"] / 100,
 		document.forms["calcForm"]["time"],
