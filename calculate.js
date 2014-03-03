@@ -8,11 +8,11 @@ InterestType = {
 
 function strToInterestType(str) {
 	switch(str) {
-		case "ANNUAL": 
-		case "SEMI_ANNUAL": 
-		case "QUARTERLY": 
-		case "MONTHLY": 
-		case "DAILY": 
+		case "ANNUAL": return ANNUAL;
+		case "SEMI_ANNUAL": return SEMI_ANNUAL;
+		case "QUARTERLY": return QUARTERLY;
+		case "MONTHLY": return MONTHLY;
+		case "DAILY": return DAILY;
 		default: return ANNUAL;
 	}
 }
