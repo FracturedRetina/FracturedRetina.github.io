@@ -17,7 +17,7 @@
 		<div class="center">
 			<h2>Compound Interest Calculator</h2>
 			
-			<form id="calcForm" action="calculate.php" method="post">
+			<form name="calcForm" id="calcForm" action="calculate.php" method="post">
 				Priciple: <input type="text" name="principle"><br>
 				Rate(%): <input type="text" name="rate"><br>
 				Terms: <input type="" name="time"><br>
@@ -31,9 +31,7 @@
 				<option value="DAILY">Daily</option>
 			</select><br>
 			
-			<p>
-				<?php src="calculate.php" ?>
-			</p>
+			<script type="text/javascript" src="calculate.js"></script>
 		</div>
 	</body>
 </html>
