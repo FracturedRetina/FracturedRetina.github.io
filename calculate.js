@@ -23,9 +23,13 @@ function getCompoundInterest(principle, rate, cycles, type) {
 	}
 	return principle;
 }
+
+
+document.forms["calcForm"]["fname"].value;
+
 document.write("$" + round(getCompoundInterest(
-	floatval($_POST["principle"]),
-	floatval($_POST["rate"] / 100),
-	floatval($_POST["time"]),
+	document.forms["calcForm"]["principle"],
+	document.forms["calcForm"]["rate"] / 100,
+	document.forms["calcForm"]["time"],
 	InterestType.MONTHLY
-), 2));
+)).toFixed(2));
