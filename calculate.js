@@ -1,9 +1,9 @@
-InterestType = {
-	const ANNUAL : 1,
-	const SEMI_ANNUAL : 2,
-	const QUARTERLY : 4,
-	const MONTHLY : 12,
-	const DAILY : 365,
+enum InterestType = {
+	ANNUAL : 1,
+	SEMI_ANNUAL : 2,
+	QUARTERLY : 4,
+	MONTHLY : 12,
+	DAILY : 365,
 }
 
 function strToInterestType(str) {
