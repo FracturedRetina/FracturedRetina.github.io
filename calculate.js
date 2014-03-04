@@ -1,4 +1,4 @@
-enum InterestType = {
+my.namespace.InterestType = {
 	ANNUAL : 1,
 	SEMI_ANNUAL : 2,
 	QUARTERLY : 4,
