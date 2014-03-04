@@ -1,4 +1,4 @@
-my.namespace.InterestType = {
+var InterestType = {
 	ANNUAL : 1,
 	SEMI_ANNUAL : 2,
 	QUARTERLY : 4,
