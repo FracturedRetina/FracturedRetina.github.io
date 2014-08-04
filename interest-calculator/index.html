@@ -1,0 +1,36 @@
+<html lang="en">
+	<head>
+		<style type="text/css">
+			.center {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				margin: auto;
+				width: 250;
+				height: 350;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="center">
+			<h2>Compound Interest Calculator</h2>
+			
+			<form name="calcForm" id="calcForm" onsumbmit="calcFromForm()">
+				Priciple: <input type="text" name="principle"><br>
+				Rate(%): <input type="text" name="rate"><br>
+				Terms: <input type="" name="time"><br>
+				<input type="submit">
+			</form>
+			Interest Type: <select form="calcForm">
+				<option value="ANNUAL">Annually</option>
+				<option value="SEMI_ANNUAL">Semi-Annually</option>
+				<option value="QUARTERLY">Quarterly</option>
+				<option value="MONTHLY">Monthly</option>
+				<option value="DAILY">Daily</option>
+			</select><br>
+		</div>
+		<script type="text/javascript" src="calculate.js"></script>
+	</body>
+</html>
